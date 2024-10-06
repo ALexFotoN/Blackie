@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Presentation/Scenes/SampleScene.unity
+    path: Assets/_Presentation/Scenes/Room.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/End.unity
+    guid: 55a9c0b6570ed83448efff8066e5841b
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Menu.unity
+    guid: ec448f21b4f48d441ab6551d722780fe
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Minigame.unity
+    guid: 57d640f7c7f9352489a6ed1e6e673a91
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Outdoor.unity
+    guid: 55e060615e6d7244e9c1471751f8feac
   m_configObjects: {}
