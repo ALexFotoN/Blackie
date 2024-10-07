@@ -12,7 +12,7 @@ namespace InputSystem
         CharacterInvoker _invoker;
         float Horizontal;
         float Vertical;
-        bool _isFacingRight = true;
+        static bool _isFacingRight = true;
         Animator _animator;
 
         private void Awake()
