@@ -19,10 +19,15 @@ namespace DialogueSystem
         //[SerializeField] GameObject _button;
         DialogueBox _manager;
         bool _isShowing = false;
+        [SerializeField] bool _nonInteractable;
 
         void Awake()
         {
             _manager = _dialogBox.GetComponent<DialogueBox>();
+            if (_nonInteractable == true)
+            {
+                _isShowing = true;
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
@@ -42,7 +47,7 @@ namespace DialogueSystem
         {
             if (_isShowing == true)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) || _nonInteractable == true)
                 {
                     Time.timeScale = 0f;
                     //_button.SetActive(false);

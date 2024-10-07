@@ -220,9 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textList:
-  - 'Player: First'
-  - 'Blackie: Second'
-  - Bye!
+  - A bright light interrupts your journey into the kingdom of Morpheus, and a strange
+    but piercing gaze disrupts your familiar surroundings
   _text: {fileID: 1510174895}
   sceneName: Room
 --- !u!4 &740308274
