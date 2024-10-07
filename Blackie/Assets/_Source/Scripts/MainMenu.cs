@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,7 +10,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] string _sceneName;
     public void Play()
     {
-        SceneManager.LoadScene(_sceneName);
+        StartCoroutine(CoroutineTimer());
+
     }
 
     public void Settings()
@@ -18,5 +21,11 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator CoroutineTimer()
+    {
+        yield return new WaitForSeconds(0.4f);
+        SceneManager.LoadScene(_sceneName);
     }
 }
