@@ -17,7 +17,6 @@ namespace DialogueSystem
         int _dialogNum = 0;
         [SerializeField] GameObject _dialogBox;
         //[SerializeField] GameObject _button;
-        [SerializeField] bool _isCutscene = false;
         DialogueBox _manager;
         bool _isShowing = false;
 
@@ -57,8 +56,6 @@ namespace DialogueSystem
                 }
             }
         }
-
-        //void Cutscene ()
 
         void Dialogs()
         {
