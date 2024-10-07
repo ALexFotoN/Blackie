@@ -420,7 +420,10 @@ MonoBehaviour:
   - {fileID: 739044961}
   - {fileID: 1802037638}
   - {fileID: 1579704440}
-  correctPositions: []
+  correctPositions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   keyPrefab: {fileID: 5500912190322790476, guid: e610a42534bf2bb44a2f7755e22c971b, type: 3}
 --- !u!61 &917385637
 BoxCollider2D:
@@ -1333,7 +1336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &2074034521
 Rigidbody2D:
   serializedVersion: 4
@@ -1481,7 +1484,7 @@ Transform:
   m_GameObject: {fileID: 2074034520}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
