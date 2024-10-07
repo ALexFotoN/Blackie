@@ -9,7 +9,7 @@ namespace CharacterSystem
         // Update is called once per frame
         void Update()
         {
-            transform.position = new Vector3(_character.position.x, _character.position.y + 3f, -10f);
+            transform.position = new Vector3(_character.position.x, _character.position.y + 1.5f, -10f);
         }
     }
 

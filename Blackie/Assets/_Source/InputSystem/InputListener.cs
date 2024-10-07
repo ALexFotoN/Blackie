@@ -13,9 +13,11 @@ namespace InputSystem
         float Horizontal;
         float Vertical;
         bool _isFacingRight = true;
+        Animator _animator;
 
         private void Awake()
         {
+            _animator = _character.GetComponent<Animator>();
             _invoker = new CharacterInvoker(_character);
             _characterrb = _character.GetComponent<Rigidbody2D>();
         }
@@ -23,6 +25,7 @@ namespace InputSystem
         private void FixedUpdate()
         {
             ReadMove();
+            _animator.SetFloat("xVelocity", Math.Abs(_characterrb.velocity.x));
         }
 
         private void ReadMove()

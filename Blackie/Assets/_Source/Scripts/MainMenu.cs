@@ -4,9 +4,11 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+
+    [SerializeField] string _sceneName;
     public void Play()
     {
-        SceneManager.LoadScene("Room");
+        SceneManager.LoadScene(_sceneName);
     }
 
     public void Settings()

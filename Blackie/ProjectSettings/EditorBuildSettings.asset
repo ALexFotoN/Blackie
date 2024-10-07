@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Presentation/Scenes/Outdoor.unity
     guid: 55e060615e6d7244e9c1471751f8feac
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Cutscenes/Cutscene1.unity
+    guid: 6927d923213846343ac02650e8cefe6b
   m_configObjects: {}
