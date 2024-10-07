@@ -3,7 +3,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     [SerializeField] GameObject _eObj;
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == 6)
         {
@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.layer == 6)
         {

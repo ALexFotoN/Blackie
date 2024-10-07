@@ -31,13 +31,13 @@ namespace DialogueSystem
             }
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             //_button.SetActive(true);
             _isShowing = true;
         }
 
-        private void OnCollisionExit2D(Collision2D collision)
+        private void OnTriggerExit2D(Collider2D other)
         {
             //_button.SetActive(false);
             _isShowing = false;
