@@ -10,7 +10,8 @@ namespace DialogueSystem
         [Serializable]
         public class Dialog
         {
-            public int spriteID;
+            public int leftSpriteID;
+            public int rightSpriteID;
             public int charID;
             public string text;
         }
@@ -67,8 +68,7 @@ namespace DialogueSystem
         {
             if (_dialogNum < _dialogList.Count)
             {
-
-                _manager.Change(_dialogList[_dialogNum].spriteID, _dialogList[_dialogNum].charID, _dialogList[_dialogNum].text);
+                _manager.Change(_dialogList[_dialogNum].leftSpriteID, _dialogList[_dialogNum].rightSpriteID, _dialogList[_dialogNum].charID, _dialogList[_dialogNum].text);
             }
             else
             {

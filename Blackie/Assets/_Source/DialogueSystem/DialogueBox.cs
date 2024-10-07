@@ -10,7 +10,8 @@ namespace DialogueSystem
     {
         [SerializeField] List<Sprite> _sprites;
         [SerializeField] List<string> _names;
-        [SerializeField] GameObject _imageObj;
+        [SerializeField] GameObject _leftImg;
+        [SerializeField] GameObject _rightImg;
         [SerializeField] TextMeshProUGUI _name;
         [SerializeField] TextMeshProUGUI _text;
 
@@ -26,9 +27,10 @@ namespace DialogueSystem
             gameObject.SetActive(true);
         }
 
-        public void Change(int _spriteID, int _characterID, string _textOut)
+        public void Change(int _leftSpriteID, int _rightSpriteID, int _characterID, string _textOut)
         {
-            _imageObj.GetComponent<Image>().sprite = _sprites[_spriteID];
+            _leftImg.GetComponent<Image>().sprite = _sprites[_leftSpriteID];
+            _rightImg.GetComponent<Image>().sprite = _sprites[_rightSpriteID];
             _name.text = _names[_characterID];
             _text.text = _textOut;
         }
