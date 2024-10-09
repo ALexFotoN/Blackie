@@ -180,7 +180,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d98874ce8089c6c4e88283939066ff99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 490ced8dfb96c9549b8dae36c17a1d4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -262,6 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MovementSpeed>k__BackingField: 10
   <Rb>k__BackingField: {fileID: 300262876}
+  _walkingSound: {fileID: 0}
 --- !u!50 &300262876
 Rigidbody2D:
   serializedVersion: 4
@@ -395,7 +396,7 @@ Transform:
   m_GameObject: {fileID: 300262873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.45, z: 0}
+  m_LocalPosition: {x: -1.2, y: -2.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
